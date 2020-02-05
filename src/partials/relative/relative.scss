@@ -1,0 +1,20 @@
+.second,
+.third {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+}
+
+.second {
+    position: relative;
+    left: 40px;
+    top: 20px;
+    background-color: red;
+}
+
+.third {
+    position: relative;
+    z-index: 2;
+    background-color: green;
+}
+
