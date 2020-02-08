@@ -1,3 +1,5 @@
-html * {
-  outline: 1px solid red;
-}
+@import './partials/card/card.scss';
+@import './partials/inline-block/inline-block.scss';
+@import './partials/float/float.scss';
+@import './partials/flex/flex.scss';
+

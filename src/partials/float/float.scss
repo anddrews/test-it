@@ -1,0 +1,13 @@
+.float {
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float-item {
+    width: 33.33%;
+    float: left;
+}
