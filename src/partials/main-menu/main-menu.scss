@@ -1,0 +1,11 @@
+.main-menu {
+    display: flex;
+    background-color: lightgray;
+}
+.main-menu__item {
+    padding: 7px;
+}
+.main-menu__item-active {
+    background-color: rgb(78, 76, 76);
+    color: #fff;
+}

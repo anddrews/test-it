@@ -1,3 +1,51 @@
 html * {
-  outline: 1px solid red;
+  outline: 1px solid lightgray;
+}
+@import "./partials/main-menu/main-menu.scss";
+@import "./partials/slider/slider.scss";
+@import "./partials/section-header/section-header.scss";
+@import "./partials/main-news/main-news.scss";
+
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 940px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container.inline {
+  flex-direction: row;
+}
+
+.aside {
+  width: 320px;
+}
+
+.main-content {
+  flex: 1 0 auto;
+  max-width: 620px;
+}
+
+.section {
+  padding-top: 25px;
+}
+
+.two-column {
+  display: flex;
+}
+
+.last-news-container {
+  max-width: 500px;
+  flex: 1 0 auto;
 }

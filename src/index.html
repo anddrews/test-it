@@ -7,6 +7,23 @@
     <title>Hello world</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <div class="container inline">
+      <div class="main-content">
+        @@include("./partials/main-menu/_main-menu.html")
+        @@include("./partials/slider/_slider.html")
+        @@include('./partials/main-news/_main-news.html')
+        <div class="two-column">
+          <div class="last-news-container">
+            @@include('./partials/last-news/_last-news.html')
+          </div>          
+        </div>
+      </div>
+      <aside class="aside">
+
+      </aside>
+    </div>
+    <footer>
+
+    </footer>
   </body>
 </html>
