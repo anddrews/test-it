@@ -2,28 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js"></script>
     <title>Hello world</title>
   </head>
   <body>
-    <div class="container inline">
-      <div class="main-content">
-        @@include("./partials/main-menu/_main-menu.html")
-        @@include("./partials/slider/_slider.html")
-        @@include('./partials/main-news/_main-news.html')
-        <div class="two-column">
-          <div class="last-news-container">
-            @@include('./partials/last-news/_last-news.html')
-          </div>          
+    <div class="full-height">
+      <div class="container inline">
+        <div class="main-content">
+          @@include("./partials/main-menu/_main-menu.html")
+          @@include("./partials/slider/_slider.html")
+          @@include('./partials/main-news/_main-news.html')
+          <div class="two-column">
+            <div class="last-news-container">
+              @@include('./partials/last-news/_last-news.html')
+            </div>          
+          </div>
         </div>
+        <aside class="aside">
+
+        </aside>
       </div>
-      <aside class="aside">
-
-      </aside>
+      <footer>
+          hello world
+      </footer>
     </div>
-    <footer>
-
-    </footer>
   </body>
 </html>
