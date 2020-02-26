@@ -1,3 +1,93 @@
 html * {
   outline: 1px solid red;
 }
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  border: 1px solid grey;
+  padding: 10px;
+  width: 20%;
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.card-content {
+  background-color: green;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+
+}
+
+@media screen and (max-width: 1024px) {
+  .card-item {
+    width: 33.3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card-item {
+    width: 100%;
+  }
+}
+
+.main-menu {
+  padding: 7px;
+  position: relative;
+}
+.burger {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  display: none;
+}
+
+.line {
+  height: 3px;
+  background-color: #000;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  padding: 7px;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    left: 50px;
+    background-color: #fff;
+  }
+
+  .burger:hover ~ .menu {
+    display: flex;
+  }
+}
