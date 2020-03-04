@@ -7,6 +7,44 @@
     <title>Hello world</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <form action="http://mockbin.org/bin/create" method="post">
+      <label for="">
+        Text input
+        <input type="text" name="text" minlength="5" maxlength="15">
+      </label>
+      <label for="">
+        Email input
+        <input type="email" name="email">
+      </label>
+      <label for="">
+        Number input
+        <input type="number" name="number" min="10" max="100">
+      </label>
+      <label for="">
+        Password input
+        <input type="password" name="password" required>
+      </label>
+      <label for="">
+        Data input
+        <input type="date" name="data">
+      </label>
+      <input  id="radio1" type="radio" name="radio" value="1">
+      <label for="radio1"  class="radio-button">
+        Radio button
+      </label>
+      <input id="radio2" type="radio" name="radio" value="10">
+      <label for="radio2" class="radio-button">
+        Radio button
+      </label>
+      <input id="radio3" type="radio" name="radio" value="100">
+      <label for="radio3" class="radio-button">
+        Radio button
+      </label>
+      <label >
+        Checkbox input
+        <input type="checkbox" name="checkbox">
+      </label>
+      <button>Submit</button>
+    </form>
   </body>
 </html>
