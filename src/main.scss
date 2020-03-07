@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/sap-icofonts.woff');
+}
+
 html * {
   // outline: 1px solid red;
 }
@@ -69,4 +74,54 @@ input[type="radio"]:checked + .radio-button:after {
 
 input[type="radio"]:checked + .radio-button {
   color: red;
+}
+
+.accordeon {
+  margin-top: 30px;
+  width: 200px;
+  outline: 1px solid lightgrey;
+}
+
+.input {
+  display: none;
+}
+
+.accordeon__item {
+  border: 1px solid black;
+  display: block;
+  padding: 10px 30px;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordeon__item:after {
+  content: '\E00D';
+  display: block;
+  font-family: 'icons';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.input1:checked ~ .accordeon__item.input1:after,
+.input2:checked ~ .accordeon__item.input2:after,
+.input3:checked ~ .accordeon__item.input3:after {
+  content: '\E00F';
+}
+
+.accordeon__description {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.input1:checked ~ .accordeon__description.input1,
+.input2:checked ~ .accordeon__description.input2,
+.input3:checked ~ .accordeon__description.input3 {
+  max-height: 100vh;
+  transition: max-height .5s ease;
 }
