@@ -1,3 +1,4 @@
+@import './partials/rating/rating.scss';
 @font-face {
   font-family: 'icons';
   src: url('../fonts/sap-icofonts.woff');
@@ -124,4 +125,9 @@ input[type="radio"]:checked + .radio-button {
 .input3:checked ~ .accordeon__description.input3 {
   max-height: 100vh;
   transition: max-height .5s ease;
+}
+
+.raiting {
+  display: flex;
+  flex-direction: row-reverse;
 }
