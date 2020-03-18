@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/main.css">
     
-    <link rel="stylesheet" href="http://owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
-    
     <script src="./js/main.js"></script>
     <title>Hello world</title>
   </head>
@@ -42,7 +41,7 @@
         <div title="ddd" class="content">Hello world</div>
       </div>
     </div>
-    <div class="owl-carousel">
+    <div class="owl-carousel owl-theme">
       <div> Your Content </div>
       <div> Your Content </div>
       <div> Your Content </div>
@@ -51,10 +50,14 @@
       <div> Your Content </div>
       <div> Your Content </div>
     </div>
+    <div class="image-container"></div>
     <script>
       $(document).ready(function(){
-        $(".owl-carousel").owlCarousel();
+        $(".owl-carousel").owlCarousel({
+          nav: true
+        });
       });
+    
     </script>
   </body>
 </html>
