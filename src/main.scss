@@ -1,3 +1,57 @@
-html * {
-  outline: 1px solid red;
+@import './partials/button/button.scss';
+// html * {
+//   outline: 1px solid red;
+// }
+
+.calculator {
+  width: 600px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+
+  &__field {
+    display: flex;
+  }
+
+  &__input {
+    width: calc(100% - 14px);
+    font-size: 40px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin: 7px;
+    padding: 5px;
+    text-align: right;
+  }
+}
+
+
+
+.num-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 75%;
+  align-items: center;
+
+  &__button-wrapper {
+    width: 33%;
+    padding: 7px;
+    box-sizing: border-box;
+
+    &:last-child {
+      width: 100%;
+      align-self: flex-end;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+
+  &__item {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+  }
 }

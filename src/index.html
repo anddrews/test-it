@@ -7,7 +7,59 @@
     <title>Hello world</title>
   </head>
   <body>
-    <h1>Hello world</h1>
-    <button class="button">test button</button>
+    <div class="calculator">
+      <input type="text" class="calculator__input">
+      <div class="calculator__field">
+        <div class="num-buttons">
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 1})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 2})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 3})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 4})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 5})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 6})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 7})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 8})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 9})
+          </div>
+          <div class="num-buttons__button-wrapper">
+            @@include('./partials/button/_button.html', {"value": 0})
+          </div>
+        </div>
+        <div class="actions">
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "+"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "-"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "*"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "/"})
+          </div>
+          <div class="actions__item">
+            @@include('./partials/button/_button.html', {"value": "="})
+          </div>
+       </div>
+      </div>
+    </div>
   </body>
 </html>

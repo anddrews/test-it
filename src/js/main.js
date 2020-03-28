@@ -58,12 +58,37 @@ function triangleReverse(lines, sign) {
     }
 }
 
-triangleReverse(5, '*');
+// triangleReverse(5, '*');
 
-var btn = document.querySelector('.button');
+var values = ['', ''];
+var action = '';
+var index = 0;
+var inputEl = document.querySelector('.calculator__input');
+var numbersContainer = document.querySelector('.num-buttons');
+var actionsContainer = document.querySelector('.actions');
 
-function clickHandler(e) {
-    console.log(e);
+
+function handleNumberClick(e) {
+    var v = e.target.dataset.value;
+
+    if (v) {
+        values[index] += v;
+        inputEl.value = values[0] + ' ' + action + ' ' + values[1];
+    }
 }
 
-btn.addEventListener('click', clickHandler);
+function handleActionClick (e) {
+    var v = e.target.dataset.value;
+
+    if (v && !action && v !== '=') {
+        action = v;
+        index = 1;
+        inputEl.value = values[0] + ' ' + action + ' ' + values[1];
+    }
+}
+
+numbersContainer.addEventListener('click', handleNumberClick);
+actionsContainer.addEventListener('click', handleActionClick);
+
+
+
