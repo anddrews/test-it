@@ -206,3 +206,147 @@ console.log(obj.a);
 
 
 
+// if () {
+
+// } else {
+
+// }
+
+
+
+// if () {
+
+// } else if {
+
+// } else
+
+
+// switch (v) {
+//     case: 
+//     default:
+// }
+
+var tmp = a > 3
+ ? 6
+ : 3;
+
+ function foo (a) {
+     var tmp = a || 'empty value ' + a;
+
+     console.log(tmp);
+ }
+
+ console.log('------- default value -----' );
+ foo(5);
+
+ foo();
+ foo(0);
+ foo('');
+ foo(false);
+
+
+ function applyMultyplication (a) {
+     var tmp = parseInt(a) && a * 3;
+
+     console.log(tmp);
+ }
+
+ applyMultyplication(5);
+ applyMultyplication('5');
+ applyMultyplication('sdfsdfw');
+
+console.log('-------- function as first sitizen -----');
+
+ function sum(a, b) {
+    return a + b;
+ }
+
+ function multiply (a, b) {
+     return a * b;
+ }
+
+ function printResult(func, a, b) {
+     var result = func(a, b);
+     
+     console.log(result);
+ }
+
+
+ printResult(sum, 3, 5);
+
+ printResult(multiply, 2, 2);
+
+
+ console.log("------------ Array's methods ------");
+
+ var arr = [1, 3, 6, 5, 79];
+
+ var tmp;
+
+ console.log('push');
+
+ arr.push(1, 3, 4);
+
+ console.log(arr);
+
+ arr.concat([3, 4, 6])
+
+ console.log('concat');
+
+ console.log(arr.concat([3, 4, 6]));
+
+ console.log('slice');
+
+ console.log(arr.slice(3, 6));
+
+ console.log('forEach');
+
+ arr.forEach(function(element) {
+     console.log(element);
+ })
+
+ function print (el) {
+     console.log(el);
+ }
+
+function forEachCustom (arr, func) {
+    for (var i = 0; i < arr.length; i++) {
+        func(arr[i]);
+    }
+}
+
+forEachCustom(arr, print);
+
+console.log(' -------------- filter ------------');
+
+// var arr = [1, 3, 'f', 5, 79];
+
+console.log ('arr ', arr);
+
+tmp = arr.filter(function(item) {
+    return parseInt(item);
+});
+
+function filterCustom (arr, func) {
+    var result = [];
+
+    for (var i = 0; i < arr.length; i ++) {
+        if (func(arr[i])) {
+            result.push(arr[i])
+        }
+    }
+}
+
+console.log(tmp)
+
+console.log('------- sort ------');
+
+arr.sort(function(a, b) {
+    return b - a; 
+})
+
+console.log(arr)
+
+
+
+
