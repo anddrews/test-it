@@ -345,7 +345,129 @@ arr.sort(function(a, b) {
     return b - a; 
 })
 
-console.log(arr)
+console.log(arr);
+
+var colors = [
+    {
+        id: 1,
+        color: 'red',
+        price: 20
+    },
+    {
+        id: 5,
+        color: 'green',
+        price: 20
+    },
+    {
+        id: 3,
+        color: 'blue',
+        price: 40
+    },
+    {
+        id: 2,
+        color: 'yellow',
+        price: 60
+    },
+    {
+        id: 4,
+        color: 'grey',
+        price: 5
+    }
+];
+
+console.log("------- sort objects' array -----");
+
+function compareColorById(color1, color2) {
+    return color1.id - color2.id;
+};
+
+function compareColorByPrice(color1, color2) {
+    return color1.price - color2.price;
+}
+
+function compareColorByName(color1, color2) { //result 0, positive number, negative number
+    if (color1 === color2) {
+        return 0;
+    }
+
+    return color1 > color2 ? 1 : -1;
+}
+
+
+console.log(colors);
+
+// var result = colors.sort(compareColorByPrice);
+
+console.log(result);
+
+console.log('-------- method map ------');
+
+console.log(colors);
+
+function cleanItem(element, index, arr) {
+    return index;
+}
+
+// {
+//     id: 1,
+//     color: 'red',
+//     price: 100
+// }
+
+function multiplyPrice(color) {
+    color.price *= 2;
+    color.date = '10-04-2020';
+
+    delete color.id;
+
+    return color;
+}
+
+var result = colors.map(multiplyPrice);
+
+console.log(result);
+
+console.log('------------- find ------------');
+
+result = colors.find(function(color) {
+    return color.price === 40;
+});
+
+console.log(result);
+
+
+console.log(Array.isArray(3));
+console.log(Array.isArray([]));
+
+result = colors.reverse();
+
+console.log(result);
+
+result = colors
+    .sort()
+    .reverse()
+    .map(function(){});
+
+console.log(' ------ join and split -----');
+
+var arr = ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'];
+
+console.log(arr.join(''));
+
+var str = 'Hello world';
+
+console.log(str.split('r'));
+
+console.log('----------- slice ------');
+
+console.log(colors.slice(3));
+
+
+
+
+
+
+
 
 
 

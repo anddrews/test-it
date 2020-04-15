@@ -31,7 +31,7 @@
   flex-wrap: wrap;
   flex-basis: 75%;
   align-items: center;
-
+  
   &__button-wrapper {
     width: 33%;
     padding: 7px;
@@ -55,3 +55,47 @@
     box-sizing: border-box;
   }
 }
+
+.main-color {
+  color: #335588;
+}
+
+.error-color {
+  color: red;
+}
+
+.fz-40 {
+  font-size: 40px;
+  font-family: Arial;
+  font-weight: bold;  
+  color: red;
+}
+
+.fz-16 {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: green;
+}
+
+.b-block__element-el--modificator {
+  display: flex;
+}
+
+// Atomic
+
+// .form-input-caption .main-border .form-indents{
+
+// }
+
+
+// OOCSS
+
+.button.error-button {
+  background-color: red;
+}
+
+.button {
+  background-color: green;
+}
+
+
