@@ -2,62 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha256-nXBV7Gr2lU0t+AwKsnS05DYtzZ81oYTXS6kj7LBQHfM=" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
-    <title>Hello world</title>
+    <script src="./js/main.js" defer></script>
+    <title>JS menu</title>
   </head>
   <body>
-    <p>
-      Lorem Ipsum is simply dummy text of the
-       printing and typesetting industry. Lorem 
-       Ipsum has been the industry's standard
-        dummy text ever since the 1500s, when 
-        an unknown printer took a galley of type
-         and scrambled it to make a type specimen
-          book. It has survived not only five centuries,
-           but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      Why do we use it?
-      It is a long established fact that
-       a reader will be distracted by the readable
-        content of a page when looking at its layout. 
-        The point of using Lorem Ipsum is that it has 
-        a more-or-less normal distribution of letters, 
-        as opposed to using 'Content here, content here',
-         making it look like readable English. Many desktop
-    </p>
-    <input type="radio" name="modal" id="open">
-    <input type="radio" name="modal" id="close">
-    <label for="open" class="modal__open">
-      send us
-    </label>
-    <div class="modal">
-      <div class="modal__content">
-        <label for="close" class="modal__close" data-tips="close&nbsp;modal&nbsp;window">X</label>
-        <div title="ddd" class="content">Hello world</div>
-      </div>
-    </div>
-    <div class="owl-carousel owl-theme">
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-      <div> Your Content </div>
-    </div>
-    <div class="image-container"></div>
-    <script>
-      $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-          nav: true
-        });
-      });
-    
-    </script>
+   <header class="header">
+     <div class="burger-opener">
+       X
+     </div>
+     <div class="main-menu">
+       <div class="main-menu__item">Home</div>
+       <div class="main-menu__item">About Us</div>
+       <div class="main-menu__item">Protfolio</div>
+       <div class="main-menu__item">Contact Us</div>
+       <div class="main-menu__item">Blog</div>
+     </div>
+   </header>
   </body>
 </html>

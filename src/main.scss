@@ -2,73 +2,57 @@
 //   outline: 1px solid red;
 // }
 
-input {
-  display: none;
-}
-
-.modal__open {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background-color: lightgrey;
-  cursor: pointer;
-  writing-mode: vertical-lr;
-  display: block;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  border: 1px solid grey;
-  padding: 3px;
-}
-
-.modal {
-  display: none;
+.header {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(241, 230, 230, .2);
-  justify-content: center;
-  align-items: center;
-}
-
-#open:checked ~ .modal {
-  display: flex;
-}
-
-.modal__content {
-  position: relative;
-  padding:  10px;
-  background-color: #fff;
-  border: 1px solid grey;
-  border-radius: 3px;
-}
-
-.modal__close {
-  position: absolute;
-  top: -15px;
-  right: -20px;
-  padding: 3px;
-  border: 1px solid grey;
-  border-radius: 50%;
-  background-color: #fff;
-  width: 14px;
-  height: 14px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  height: 60px;
 }
 
-.modal__close:hover:after {
-  content: attr(data-tips);
-  display: block;
-  position: absolute;
-  left: 110%;
-  top: -15px;
-  padding: 5px;
-  background-color: grey;
-  border-radius: 5px;
+.burger-opener {
+  display: none;
+  border: 1px solid black;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    padding: 5px;
+    border: 1px dotted red
+  }
+}
+
+.main-menu.is-active {
+  max-height: 100vh;
+  transition: all 0.5s ease;
+  border: 1px solid lightgrey;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-opener {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .main-menu {
+    position: absolute;
+    left: 50px;
+    top: calc(100% + 7px);
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  .main-menu .main-menu__item {
+    margin: 7px;
+  }
 }
