@@ -12,6 +12,9 @@ txt.innerText = `Phasellus gravida semper nisi.
  et netus et malesuada fames ac turpis egestas.
  Phasellus gravida semper nisi.`;
 btn.innerText = 'click me!';
+img.src = './img/ad.png';
+
+ad.classList.add('banner');
 
 ad.appendChild(img);
 ad.appendChild(txt);
