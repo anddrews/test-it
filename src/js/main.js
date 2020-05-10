@@ -15,11 +15,19 @@ btn.innerText = 'click me!';
 img.src = './img/ad.png';
 
 ad.classList.add('banner');
+txt.classList.add('text');
+btn.classList.add('btn');
+
+btn.addEventListener('mouseover', function() {
+    btn.style.backgroundColor = 'red';
+});
+
+btn.addEventListener('mouseout', function() {
+    btn.style = null;
+});
 
 ad.appendChild(img);
 ad.appendChild(txt);
 ad.appendChild(btn);
 
 body.replaceChild(ad, placeholder);
-
-
